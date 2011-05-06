@@ -33,10 +33,10 @@ class PugPe(db.Model):
         return "".join(s)   
 
     def to_text(self):
-        return 'http://pugpe.appspot.com/%s' % self.code()
+        return 'http://pug.pe/%s' % self.code()
 
     def to_json(self):
-        return "{\"code\":\"%s\",\"href\":\"%s\"}\n" % ('http://pugpe.appsot.com/' + self.code(), self.href)
+        return "{\"code\":\"%s\",\"href\":\"%s\"}\n" % ('http://pug.pe/' + self.code(), self.href)
 
     def save_in_cache(self):
         """We don't really care if this fails"""
